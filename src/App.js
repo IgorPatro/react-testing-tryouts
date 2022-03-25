@@ -3,6 +3,7 @@ import Basic from "./components/Basic"
 import List from "./components/List"
 import Counter from "./components/Counter"
 import DummyClick from "./components/DummyClick"
+import APIhandler from "./components/APIhandler"
 
 const App = () => {
   return (
@@ -16,6 +17,8 @@ const App = () => {
       <Counter />
       <hr />
       <DummyClick />
+      <hr />
+      <APIhandler />
     </div>
   )
 }
