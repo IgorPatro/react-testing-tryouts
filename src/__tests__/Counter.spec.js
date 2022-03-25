@@ -8,8 +8,6 @@ describe("counter", () => {
     const counter = screen.getByText(/counter/i)
     const button = screen.getByText(/increment/i)
 
-    console.log(button)
-
     expect(counter).toBeInTheDocument()
     expect(button).toBeInTheDocument()
   })

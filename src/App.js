@@ -2,6 +2,7 @@ import React from "react"
 import Basic from "./components/Basic"
 import List from "./components/List"
 import Counter from "./components/Counter"
+import DummyClick from "./components/DummyClick"
 
 const App = () => {
   return (
@@ -13,6 +14,8 @@ const App = () => {
       <List items={["one", "two", "three"]} />
       <hr />
       <Counter />
+      <hr />
+      <DummyClick />
     </div>
   )
 }
