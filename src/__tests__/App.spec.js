@@ -14,4 +14,7 @@ it("should render app with heading", () => {
 
   // We can test the text content of the heading
   expect(headingElementByRole).toHaveTextContent("test")
+
+  // ERROR: There is an error in the console which is caused
+  // by not
 })

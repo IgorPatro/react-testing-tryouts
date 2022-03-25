@@ -19,6 +19,7 @@ const App = () => {
       <DummyClick />
       <hr />
       <APIhandler />
+      <hr />
     </div>
   )
 }
