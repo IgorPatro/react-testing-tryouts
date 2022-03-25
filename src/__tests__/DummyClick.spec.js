@@ -2,6 +2,10 @@ import { render, screen, fireEvent } from "@testing-library/react"
 import DummyClick from "../components/DummyClick"
 
 it("should render and operate mocked click", () => {
+  // Here we are using jest testing library
+  // It is automatically added to the config in CRA
+  // Here we are using mock features which helps us
+  // to create dummy actions
   const handleClick = jest.fn()
 
   render(<DummyClick onClick={handleClick} title="dummy-click" />)
