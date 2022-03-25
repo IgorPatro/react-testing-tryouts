@@ -1,6 +1,7 @@
 import React from "react"
 import Basic from "./components/Basic"
 import List from "./components/List"
+import Counter from "./components/Counter"
 
 const App = () => {
   return (
@@ -10,6 +11,8 @@ const App = () => {
       <Basic />
       <hr />
       <List items={["one", "two", "three"]} />
+      <hr />
+      <Counter />
     </div>
   )
 }
