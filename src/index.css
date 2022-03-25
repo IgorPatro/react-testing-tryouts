@@ -18,3 +18,8 @@ code {
 hr {
   margin: 30px 0;
 }
+
+a {
+  color: lightgray;
+  padding: 10px;
+}

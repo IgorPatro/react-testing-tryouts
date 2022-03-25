@@ -2,7 +2,7 @@ import React from "react"
 
 const List = ({ items }) => {
   return (
-    <div class="custom-class">
+    <div>
       {items.map((item) => (
         <a key={item} href={item}>
           {item}
