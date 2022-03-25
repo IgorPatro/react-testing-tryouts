@@ -1,23 +1,17 @@
-import { render, screen, fireEvent } from "@testing-library/react"
+import { render, screen } from "@testing-library/react"
 import App from "../App"
 
-it("renders element with 'test' content", () => {
-  render(<App />)
+it("should render app with heading", () => {
+  const { container } = render(<App />)
 
-  const headingElement = screen.getByText(/test/i)
-  expect(headingElement).toBeInTheDocument()
-})
+  // We can find heading by query selector
+  const headingElementByQuerySelector = container.querySelector("h1")
+  expect(headingElementByQuerySelector).toBeInTheDocument()
 
-it("increments counter after click", () => {
-  render(<App />)
+  // Or we can find it by role
+  const headingElementByRole = screen.getByRole("heading")
+  expect(headingElementByRole).toBeInTheDocument()
 
-  const buttonElement = screen.getByText(/increment/i)
-  const counterElement = screen.getByText(/0/i)
-  expect(buttonElement).toBeInTheDocument()
-  expect(counterElement).toBeInTheDocument()
-
-  console.log(buttonElement)
-
-  fireEvent.click(buttonElement)
-  expect(counterElement).toHaveTextContent("1")
+  // We can test the text content of the heading
+  expect(headingElementByRole).toHaveTextContent("test")
 })

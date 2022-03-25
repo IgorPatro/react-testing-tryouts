@@ -1,15 +1,15 @@
 import React from "react"
+import Basic from "./components/Basic"
+import List from "./components/List"
 
 const App = () => {
-  const [number, setNumber] = React.useState(0)
-
-  const incrementNumber = () => setNumber((prevState) => (prevState += 1))
-
   return (
     <div className="App">
       <h1>test</h1>
-      <h3>{number}</h3>
-      <button onClick={incrementNumber}>Increment</button>
+      <hr />
+      <Basic />
+      <hr />
+      <List items={["one", "two", "three"]} />
     </div>
   )
 }
