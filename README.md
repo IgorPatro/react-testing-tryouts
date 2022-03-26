@@ -18,6 +18,7 @@ Personal tryouts of React Testing Library and Jest
 
 ## Available commands
 - test # start test mode
+- start # developing site
 ```
 
 
