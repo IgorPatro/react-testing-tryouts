@@ -1,6 +1,4 @@
-<h1 align="center">
-  React Testing Tryouts
-</h1>
+# React Testing Tryouts
 
 ## Status: ````In progress````
 
@@ -16,7 +14,7 @@ Personal tryouts of React Testing Library and Jest
 ```bash
 ## Setup and run app
 - run 'yarn'
-- run start
+- run 'yarn start'
 
 ## Available commands
 - test # start test mode
